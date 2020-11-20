@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>uz.uzkassa.common</groupId>
-    <artifactId>common-lib</artifactId>
+    <artifactId>saga-lib</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>common-lib</name>
+    <name>saga-lib</name>
     <dependencies>
         <dependency>
             <groupId>org.axonframework</groupId>
