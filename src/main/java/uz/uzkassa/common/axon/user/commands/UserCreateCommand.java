@@ -1,4 +1,4 @@
-package uz.uzkassa.common.axon.commands;
+package uz.uzkassa.common.axon.user.commands;
 
 
 import uz.uzkassa.common.axon.base.commands.BaseCommand;
