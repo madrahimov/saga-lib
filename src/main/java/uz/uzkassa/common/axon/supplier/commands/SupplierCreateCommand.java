@@ -1,14 +1,17 @@
 package uz.uzkassa.common.axon.supplier.commands;
 
 
-import uz.uzkassa.common.axon.base.commands.BaseCommand;
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
-public class SupplierCreateCommand extends BaseCommand<String> {
+public class SupplierCreateCommand {
+
+    @TargetAggregateIdentifier
+    public String supplierId;
 
     public String login;
 
-    public SupplierCreateCommand(String id, String login) {
-        super(id);
+    public SupplierCreateCommand(String supplierId, String login) {
+        this.supplierId = supplierId;
         this.login = login;
     }
 }

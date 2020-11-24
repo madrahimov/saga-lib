@@ -1,14 +1,20 @@
 package uz.uzkassa.common.axon.user.commands;
 
 
-import uz.uzkassa.common.axon.base.commands.BaseCommand;
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
-public class UserCreateCommand extends BaseCommand<String> {
+public class UserCreateCommand {
+
+    @TargetAggregateIdentifier
+    public String userId;
+
+    public String companyId;
 
     public String login;
 
-    public UserCreateCommand(String id, String login) {
-        super(id);
+    public UserCreateCommand(String userId, String companyId, String login) {
+        this.userId = userId;
+        this.companyId = companyId;
         this.login = login;
     }
 }
