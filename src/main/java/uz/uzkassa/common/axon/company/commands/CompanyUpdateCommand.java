@@ -6,15 +6,15 @@ import org.axonframework.modelling.command.TargetAggregateIdentifier;
 public class CompanyUpdateCommand {
 
     @TargetAggregateIdentifier
-    public String updatedCompanyId;
+    public String companyId;
 
     public String userId;
 
     public String login;
 
 
-    public CompanyUpdateCommand(String updatedCompanyId, String userId, String login) {
-        this.updatedCompanyId = updatedCompanyId;
+    public CompanyUpdateCommand(String companyId, String userId, String login) {
+        this.companyId = companyId;
         this.userId = userId;
         this.login = login;
     }
